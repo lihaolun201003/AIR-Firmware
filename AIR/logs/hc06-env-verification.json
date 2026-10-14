@@ -1,0 +1,185 @@
+{
+  "client_date": "2026-10-10",
+  "board": "NUCLEO-F411RE",
+  "project_path": "C:\\Users\\TiAmo\\Desktop\\AIR\\AIR",
+  "bluetooth_module": "HC-06",
+  "bluetooth_receiver": "Android phone",
+  "bluetooth_uart": {
+    "instance": "USART2",
+    "rx": "PA3",
+    "tx": "PA2",
+    "baud": 9600,
+    "format": "8N1"
+  },
+  "required_bridges": {
+    "SB13": "OFF",
+    "SB14": "OFF",
+    "SB62": "ON",
+    "SB63": "ON"
+  },
+  "sensor_uart": {
+    "instance": "USART1",
+    "rx": "PA10",
+    "tx_unconnected": "PA9",
+    "baud": 9600
+  },
+  "resources": {
+    "nucleo_f411re": {
+      "build": "SUCCESS",
+      "static_ram_bytes": 8480,
+      "ram_capacity_bytes": 131072,
+      "flash_used_bytes": 46688,
+      "flash_capacity_bytes": 524288
+    },
+    "nucleo_f411re_debug": {
+      "build": "SUCCESS",
+      "static_ram_bytes": 7392,
+      "ram_capacity_bytes": 131072,
+      "flash_used_bytes": 45352,
+      "flash_capacity_bytes": 524288
+    }
+  },
+  "tests": {
+    "environment": "native",
+    "bluetooth_tests_passed": 14,
+    "pms_regression_tests_passed": 6,
+    "total_passed": 20,
+    "failures": 0,
+    "compiler_flags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    "log": "logs/hc06-env-native-tests.log"
+  },
+  "artifact_checks": {
+    "env_formatter_present": true,
+    "old_json_formatter_absent": true,
+    "bluetooth_image_has_no_old_serial_logs": true,
+    "exported_image_matches_uploaded_build": true,
+    "stack_pointer": "0x20020000",
+    "reset_vector": "0x800569d"
+  },
+  "hardware": {
+    "bridge_state": "User confirmed hardware ready; not physically measured by agent",
+    "uploaded_this_iteration": true,
+    "hc06_android_wireless_test": "not captured by agent; pending phone App feedback",
+    "display_and_sensor_test_on_new_firmware": "not performed",
+    "user_confirmation": "2026-10-10: user confirmed hardware ready and requested flashing",
+    "flash_verification": "Verified OK",
+    "target_reset_after_upload": true,
+    "upload_log": "logs/hc06-env-upload.log",
+    "uploaded_environment": "nucleo_f411re",
+    "uploaded_firmware_sha256": "db4ac66be32e08aa9345157cd0572ab3f107273df680e2b834639adf61a8cc02"
+  },
+  "backup": "backups/before-env-protocol-20261010",
+  "files": {
+    "platformio.ini": {
+      "bytes": 1608,
+      "sha256": "391b59aa396a2c433d660bb9c99fda058c4e8109406dc60aadeb0dd132b95818"
+    },
+    "README.md": {
+      "bytes": 10255,
+      "sha256": "002736923842b0ae44f8cae43e1ac6f6ba8ff98800c7b5209e1c92986dce5d65"
+    },
+    "include/air_config.h": {
+      "bytes": 209,
+      "sha256": "a590d2d613cdd4e6d3c89d44825756e29dfdd0d8e9688fe39730911fb97902f5"
+    },
+    "include/air_bluetooth.h": {
+      "bytes": 3494,
+      "sha256": "36744c321d9d581e8a640d59c697bcba14c74743f794f8a5a8e967c9967a79bf"
+    },
+    "include/pms5003st.h": {
+      "bytes": 2907,
+      "sha256": "78325dcd56eea2e4ddcf1b418298df044fef0c0ef8bf1d97dba16e9264f98832"
+    },
+    "include/boot_character_data.h": {
+      "bytes": 96207,
+      "sha256": "aa4155960c55c05fad96480d2e1e36ba6a4525d201111c8412c4999020efb76e"
+    },
+    "include/boot_animation.h": {
+      "bytes": 333,
+      "sha256": "a9cebba5ab48b56b4188e9f28e0da8e2ca07b87af40b49817307e254384b8c5e"
+    },
+    "src/air_bluetooth.cpp": {
+      "bytes": 5350,
+      "sha256": "234bb382b0f7de5b3343ae191a3e830a9b28310ac69e58e34b5962aba7cbfbd0"
+    },
+    "src/main.cpp": {
+      "bytes": 9898,
+      "sha256": "7f987537dd8dca0a17e0f6ef86a24d91bc55db7aab32ab1173f1cb15319f15b2"
+    },
+    "src/boot_animation.cpp": {
+      "bytes": 5489,
+      "sha256": "d35790bdbbdcc73ca9b2abfb3a5c6c1d2cc8df16fe740698361580ea71a2fe9a"
+    },
+    "src/boot_display.cpp": {
+      "bytes": 3399,
+      "sha256": "ff3b8612a0794c3e0995dd89d4637e9c37b5e49db59e7cf7c5f0046235ebb005"
+    },
+    "test/test_air_bluetooth/test_main.cpp": {
+      "bytes": 13417,
+      "sha256": "859c0512e6735d51929ab4363d55ee7603708dad88c20ad927df73eb647e1dbf"
+    },
+    "test/test_pms_parser/test_main.cpp": {
+      "bytes": 4393,
+      "sha256": "e286e8f88dc52117a8a4cdad3a237df4543638b1478321aabc072da806730c9e"
+    },
+    "docs/HC06-integration.md": {
+      "bytes": 9568,
+      "sha256": "e390f238a6c0ab6ed8f0770b0a057bb9e1441c4bce44ff9b267791229ccb8b92"
+    },
+    "logs/hc06-env-build.log": {
+      "bytes": 6634,
+      "sha256": "67769322874308ae862bd0a7373e82b098966685b001d2af9e588d1e8fe4c074"
+    },
+    "logs/hc06-env-native-tests.log": {
+      "bytes": 5976,
+      "sha256": "d11b251b51d74e1b10e4ace45f01ef4f6bc1a25ec21beed2e75ad788d743d5ae"
+    },
+    "logs/hc06-env-upload.log": {
+      "bytes": 5398,
+      "sha256": "048e0570349df3f1f3d966bad4b27b7064615ed1125ff500d4eecd3165960221"
+    },
+    "firmware/air-hc06-env-20261010.bin": {
+      "bytes": 47144,
+      "sha256": "db4ac66be32e08aa9345157cd0572ab3f107273df680e2b834639adf61a8cc02"
+    },
+    "firmware/air-hc06-env-20261010.elf": {
+      "bytes": 93948,
+      "sha256": "b43bcb8e142121267f060824212ef715048f4f0285b4bf71c84f40aae8c52436"
+    },
+    "firmware/air-debug-env-20261010.bin": {
+      "bytes": 45808,
+      "sha256": "805b5cedbad901537548d1af27cf4a6d70d88b748e1835c2f8c6224c3e45cb12"
+    },
+    "firmware/air-debug-env-20261010.elf": {
+      "bytes": 92788,
+      "sha256": "1b0224efc0a3016c0ba02f92dbace1b11437e6fd4b0a904b7517ed10561cead0"
+    }
+  },
+  "protocol": {
+    "name": "ENV",
+    "user_confirmed_order": true,
+    "fields": [
+      "PM1.0_ug_m3",
+      "PM2.5_ug_m3",
+      "PM10_ug_m3",
+      "HCHO_mg_m3",
+      "temperature_C",
+      "humidity_percent"
+    ],
+    "prefix": "$ENV,",
+    "terminator": "#",
+    "encoding": "ASCII",
+    "sends_cr_lf_or_nul": false,
+    "report_interval_ms": 1000,
+    "hcho_decimal_places": 3,
+    "temperature_decimal_places": 1,
+    "humidity_decimal_places": 1,
+    "invalid_sensor_data": "automatic ENV packets suppressed; GET returns a framed error",
+    "tested_phone_example": "$ENV,18,35,48,0.023,25.6,61.2#"
+  },
+  "previous_json_verification": "logs/hc06-verification.json"
+}

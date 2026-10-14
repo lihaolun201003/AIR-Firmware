@@ -1,0 +1,53 @@
+{
+  "client_date": "2026-10-05",
+  "build": "SUCCESS",
+  "flash_verification": "Verified OK",
+  "display_enable_command_uptime_ms": 559,
+  "animation_duration_ms": 3482,
+  "rendered_animation_frames": 31,
+  "sensor_frames_during_animation": 4,
+  "sensor_frames_after_animation_in_capture": 17,
+  "monitor_started_automatically": true,
+  "sensor_checksum_errors": 0,
+  "sensor_length_errors": 0,
+  "sensor_partial_timeouts": 0,
+  "flash_used_bytes": 45200,
+  "static_ram_used_bytes": 7392,
+  "visual_check": "User confirmed after pressing RESET: no obvious white flash; animation and sensor data display normally",
+  "hardware_limitation": "Backlight LED is wired directly to 3V3; display-off does not switch off backlight",
+  "backup": "backups/before-startup-flash-fix-20261005-134112",
+  "files": {
+    "src/main.cpp": {
+      "bytes": 8701,
+      "sha256": "85060823394304bcc568e9f120293436a3ee20189d4e0c1452f82b2b76a0e618"
+    },
+    "src/boot_animation.cpp": {
+      "bytes": 5300,
+      "sha256": "056742f720d0c6dddf1b4e9f30304fac2974aedc52aff2b85856a8e3cfc90558"
+    },
+    "include/boot_animation.h": {
+      "bytes": 329,
+      "sha256": "baae111912e22605fdbc3d331196ad2688a8ed66ae600079d814d13f67249934"
+    },
+    "src/boot_display.cpp": {
+      "bytes": 3342,
+      "sha256": "c0f6c8dc178b30448098fe0e6348f84a74974b2b89d50e7abd857e657304ef90"
+    },
+    "include/boot_display.h": {
+      "bytes": 389,
+      "sha256": "6837cdd66547d992fbdd6e01f948f6c4f514d8fd5050b581815ea65ce6d6bc4b"
+    },
+    "include/pms5003st.h": {
+      "bytes": 2907,
+      "sha256": "78325dcd56eea2e4ddcf1b418298df044fef0c0ef8bf1d97dba16e9264f98832"
+    },
+    "include/boot_character_data.h": {
+      "bytes": 96207,
+      "sha256": "aa4155960c55c05fad96480d2e1e36ba6a4525d201111c8412c4999020efb76e"
+    },
+    ".pio/build/nucleo_f411re/firmware.bin": {
+      "bytes": 45656,
+      "sha256": "e1f2b76f6eaf34f2c8723e87f71771710638b9d37754995f31f3edc3bcf0592e"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "verified_at_local": "2026-10-03T10:54:12+08:00",
+  "board": "NUCLEO-F411RE",
+  "upload_protocol": "stlink",
+  "flash_verification": "Verified OK",
+  "serial_port": "COM3",
+  "serial_baud": 115200,
+  "display_visual_check": "User confirmed text, color bars and running timer are all normal",
+  "files": {
+    "src/main.cpp": {
+      "bytes": 3755,
+      "sha256": "4ad3fa6647a0cc6779f8df1edba52e9076ac276f3f3a7d0970c3d3d104877493"
+    },
+    "platformio.ini": {
+      "bytes": 732,
+      "sha256": "2ee4e6536cf6c3e0dec299d5984b3143eb16007df0bc9225070b74c651256e8b"
+    },
+    "include/wiring_private.h": {
+      "bytes": 273,
+      "sha256": "62b4639b6650b37278a1c952b710e24ced274ad215c3b3c4e0e3c6a28d879669"
+    },
+    "scripts/windows_paths.py": {
+      "bytes": 447,
+      "sha256": "57c33e4af15923b7e7f85acefd78a3386b33f99c84308d4ae408df5eac92ae57"
+    },
+    ".pio/build/nucleo_f411re/firmware.bin": {
+      "bytes": 24000,
+      "sha256": "1521ff352a84b8bf54ceea02f39e425f2a519d62c48c9a7f09bc9a8fbf34877e"
+    }
+  }
+}

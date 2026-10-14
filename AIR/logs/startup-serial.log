@@ -1,0 +1,41 @@
+PMS frame=506 PM1=16 PM2.5=21 PM10=24 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS status: rx=20240 valid=506 checksum_bad=0 length_bad=0 partial_timeout=0 age_ms=577
+PMS frame=507 PM1=16 PM2.5=21 PM10=24 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=508 PM1=14 PM2.5=19 PM10=21 ug/m3 TEMP=22.5 C RH=60.9 % HCHO=0.000 mg/m3 FW=145 ERR=0
+
+AIR PMS5003ST monitor boot
+PMS TXD -> D2/PA10, VCC=5V, GND=GND; active receive only
+LCD CS=PB6 DC=PB5 RESET=PA8 SCK=PA5 MOSI=PA7 LED=3V3
+LCD initialized: display OFF until first frame is ready
+BOOT animation: start
+LCD first complete frame enabled at uptime_ms=559
+PMS frame=1 PM1=15 PM2.5=20 PM10=22 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS RAW: 42 4D 00 24 00 0F 00 14 00 16 00 0F 00 14 00 16 0A B3 02 E9 00 79 00 07 00 01 00 00 00 00 00 E1 02 60 00 00 91 00 05 22
+PMS frame=2 PM1=15 PM2.5=20 PM10=22 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS RAW: 42 4D 00 24 00 0F 00 14 00 16 00 0F 00 14 00 16 0A B3 02 E9 00 79 00 07 00 01 00 00 00 00 00 E1 02 60 00 00 91 00 05 22
+PMS frame=3 PM1=15 PM2.5=21 PM10=22 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=4 PM1=15 PM2.5=21 PM10=22 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+BOOT animation: done duration_ms=3482 frames=31
+BOOT monitor: ready
+PMS frame=5 PM1=15 PM2.5=21 PM10=22 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS status: rx=205 valid=5 checksum_bad=0 length_bad=0 partial_timeout=0 age_ms=445
+PMS frame=6 PM1=15 PM2.5=21 PM10=23 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=7 PM1=15 PM2.5=21 PM10=23 ug/m3 TEMP=22.4 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=8 PM1=15 PM2.5=21 PM10=23 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=9 PM1=15 PM2.5=22 PM10=23 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=10 PM1=15 PM2.5=22 PM10=23 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS status: rx=405 valid=10 checksum_bad=0 length_bad=0 partial_timeout=0 age_ms=762
+PMS frame=11 PM1=15 PM2.5=22 PM10=23 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=12 PM1=14 PM2.5=22 PM10=23 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=13 PM1=14 PM2.5=22 PM10=23 ug/m3 TEMP=22.5 C RH=60.7 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=14 PM1=13 PM2.5=21 PM10=22 ug/m3 TEMP=22.5 C RH=60.6 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=15 PM1=14 PM2.5=21 PM10=22 ug/m3 TEMP=22.5 C RH=60.7 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=16 PM1=14 PM2.5=21 PM10=22 ug/m3 TEMP=22.5 C RH=60.7 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS status: rx=645 valid=16 checksum_bad=0 length_bad=0 partial_timeout=0 age_ms=172
+PMS frame=17 PM1=15 PM2.5=22 PM10=23 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=18 PM1=15 PM2.5=22 PM10=23 ug/m3 TEMP=22.5 C RH=60.9 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=19 PM1=15 PM2.5=22 PM10=23 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=20 PM1=15 PM2.5=22 PM10=23 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS frame=21 PM1=16 PM2.5=22 PM10=24 ug/m3 TEMP=22.5 C RH=60.8 % HCHO=0.000 mg/m3 FW=145 ERR=0
+PMS status: rx=845 valid=21 checksum_bad=0 length_bad=0 partial_timeout=0 age_ms=489
+P

@@ -1,0 +1,89 @@
+{
+  "client_date": "2026-10-10",
+  "uart": "USART2 PA3 RX / PA2 TX, 9600 8N1",
+  "phone_disconnected": "confirmed by user",
+  "queries_are_read_only": true,
+  "sram_address": "0x2000026c",
+  "records": [
+    {
+      "command": "AT\r\n",
+      "reply": "",
+      "reply_hex": "",
+      "length": 0,
+      "overflow": 0
+    },
+    {
+      "command": "AT+VERSION\r\n",
+      "reply": "",
+      "reply_hex": "",
+      "length": 0,
+      "overflow": 0
+    },
+    {
+      "command": "AT+LADDR\r\n",
+      "reply": "",
+      "reply_hex": "",
+      "length": 0,
+      "overflow": 0
+    },
+    {
+      "command": "AT+ADDR?\r\n",
+      "reply": "",
+      "reply_hex": "",
+      "length": 0,
+      "overflow": 0
+    },
+    {
+      "command": "AT+ADDR\r\n",
+      "reply": "",
+      "reply_hex": "",
+      "length": 0,
+      "overflow": 0
+    },
+    {
+      "command": "AT",
+      "reply": "",
+      "reply_hex": "",
+      "length": 0,
+      "overflow": 0
+    },
+    {
+      "command": "AT+VERSION",
+      "reply": "",
+      "reply_hex": "",
+      "length": 0,
+      "overflow": 0
+    },
+    {
+      "command": "AT+ADDR?",
+      "reply": "",
+      "reply_hex": "",
+      "length": 0,
+      "overflow": 0
+    },
+    {
+      "command": "AT+ADDR",
+      "reply": "",
+      "reply_hex": "",
+      "length": 0,
+      "overflow": 0
+    },
+    {
+      "command": "AT+LADDR",
+      "reply": "",
+      "reply_hex": "",
+      "length": 0,
+      "overflow": 0
+    }
+  ],
+  "addresses": [],
+  "original_firmware": "firmware/air-hc06-env-20261010.elf",
+  "original_elf_sha256": "b43bcb8e142121267f060824212ef715048f4f0285b4bf71c84f40aae8c52436",
+  "original_firmware_restored": true,
+  "stlink_vcp_read_only_capture": "AT\r\nAT+VERSION\r\nAT+LADDR\r\nAT+ADDR?\r\nAT+ADDR\r\nATAT+VERSIONAT+ADDR?AT+ADDRAT+LADDR",
+  "stlink_vcp_capture_hex": "41540d0a41542b56455253494f4e0d0a41542b4c414444520d0a41542b414444523f0d0a41542b414444520d0a415441542b56455253494f4e41542b414444523f41542b4144445241542b4c41444452",
+  "magic": "0x36435048",
+  "probe_complete": true,
+  "uptime_ms": 10600,
+  "restore_verification": "Verified OK"
+}

@@ -1,0 +1,42 @@
+Processing nucleo_f411re (platform: ststm32@20.0.0; board: nucleo_f411re; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/ststm32/nucleo_f411re.html
+PLATFORM: ST STM32 (20.0.0) > ST Nucleo F411RE
+HARDWARE: STM32F411RET6 100MHz, 128KB RAM, 512KB Flash
+DEBUG: Current (stlink) On-board (stlink) External (blackmagic, cmsis-dap, jlink)
+PACKAGES: 
+ - framework-arduinoststm32 @ 4.30000.0 (3.0.0) 
+ - framework-cmsis @ 2.60300.0 (6.3.0) 
+ - framework-cmsis-dsp @ 1.16.2 
+ - toolchain-gccarmnoneeabi @ 1.120301.0 (12.3.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 23 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- Adafruit ILI9341 @ 1.6.4
+|-- Adafruit GFX Library @ 1.12.6
+|-- SPI @ 1.1.0
+Building in release mode
+Compiling .pio\build\nucleo_f411re\src\main.cpp.o
+Compiling .pio\build\nucleo_f411re\libf3f\Wire\Wire.cpp.o
+Compiling .pio\build\nucleo_f411re\libf3f\Wire\utility\twi.c.o
+Compiling .pio\build\nucleo_f411re\lib870\SPI\SPI.cpp.o
+Compiling .pio\build\nucleo_f411re\lib870\SPI\utility\spi_com.c.o
+Compiling .pio\build\nucleo_f411re\lib046\Adafruit BusIO\Adafruit_BusIO_Register.cpp.o
+Compiling .pio\build\nucleo_f411re\lib046\Adafruit BusIO\Adafruit_GenericDevice.cpp.o
+Compiling .pio\build\nucleo_f411re\lib046\Adafruit BusIO\Adafruit_I2CDevice.cpp.o
+Compiling .pio\build\nucleo_f411re\lib046\Adafruit BusIO\Adafruit_SPIDevice.cpp.o
+Compiling .pio\build\nucleo_f411re\lib521\Adafruit GFX Library\Adafruit_GFX.cpp.o
+Compiling .pio\build\nucleo_f411re\lib521\Adafruit GFX Library\Adafruit_GrayOLED.cpp.o
+Compiling .pio\build\nucleo_f411re\lib521\Adafruit GFX Library\Adafruit_SPITFT.cpp.o
+Compiling .pio\build\nucleo_f411re\lib521\Adafruit GFX Library\glcdfont.c.o
+Compiling .pio\build\nucleo_f411re\lib869\Adafruit ILI9341\Adafruit_ILI9341.cpp.o
+Linking .pio\build\nucleo_f411re\firmware.elf
+Checking size .pio\build\nucleo_f411re\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [          ]   1.7% (used 2268 bytes from 131072 bytes)
+Flash: [=         ]   5.3% (used 27712 bytes from 524288 bytes)
+Building .pio\build\nucleo_f411re\firmware.bin
+========================= [SUCCESS] Took 3.51 seconds =========================

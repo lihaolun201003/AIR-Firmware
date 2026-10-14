@@ -1,0 +1,161 @@
+{
+  "client_date": "2026-10-10",
+  "board": "NUCLEO-F411RE",
+  "task": "Adapt STM32 UART telemetry to Blinker temp/humi number widgets",
+  "default_environment": "nucleo_f411re",
+  "legacy_environment": "nucleo_f411re_env",
+  "protocol": {
+    "default": "Blinker JSON lines",
+    "encoding": "ASCII with JSON Unicode escape",
+    "terminator": "LF (0x0A)",
+    "baud": 9600,
+    "uart": "USART2 RX PA3 / TX PA2",
+    "widgets": [
+      "pm1",
+      "pm25",
+      "pm10",
+      "hcho",
+      "temp",
+      "humi"
+    ],
+    "number_properties": [
+      "val",
+      "uni"
+    ],
+    "temperature_unit": "℃",
+    "humidity_unit": "%",
+    "report_interval_ms": 1000,
+    "status_query": {
+      "get": "state"
+    },
+    "status_reply": {
+      "state": "connected"
+    },
+    "legacy_switch": "AIR_BLUETOOTH_BLINKER=0",
+    "tested_input_example": "$ENV,10,20,30,0.015,28.6,72.5#",
+    "tested_temp_value": 28.6,
+    "tested_humi_value": 72.5,
+    "example_is_hardcoded_in_firmware": false
+  },
+  "resources": {
+    "nucleo_f411re": {
+      "build": "SUCCESS",
+      "static_ram_bytes": 8512,
+      "flash_used_bytes": 47096
+    },
+    "nucleo_f411re_env": {
+      "build": "SUCCESS",
+      "static_ram_bytes": 8512,
+      "flash_used_bytes": 46944
+    },
+    "nucleo_f411re_debug": {
+      "build": "SUCCESS",
+      "static_ram_bytes": 7392,
+      "flash_used_bytes": 45352
+    }
+  },
+  "tests": {
+    "native": {
+      "total_passed": 25,
+      "bluetooth": 19,
+      "pms": 6
+    },
+    "native_env": {
+      "total_passed": 25,
+      "bluetooth": 19,
+      "pms": 6
+    },
+    "legacy_blinker_only_service_cases": "two mode-specific cases not applicable in legacy mode",
+    "failures": 0,
+    "log": "logs/hc06-blinker-native-tests.log"
+  },
+  "preserved_source_hashes_match_previous_firmware": [
+    "src/main.cpp",
+    "include/pms5003st.h",
+    "src/boot_animation.cpp",
+    "src/boot_display.cpp",
+    "include/boot_character_data.h",
+    "test/test_pms_parser/test_main.cpp"
+  ],
+  "hardware": {
+    "upload": "Verified OK",
+    "reset": true,
+    "upload_log": "logs/hc06-blinker-upload.log",
+    "read_only_uart_capture": "logs/hc06-blinker-serial.json",
+    "valid_json_packet_count": 8,
+    "last_uart_packet": {
+      "pm1": {
+        "val": 11
+      },
+      "pm25": {
+        "val": 16
+      },
+      "pm10": {
+        "val": 17
+      },
+      "hcho": {
+        "val": 0.0
+      },
+      "temp": {
+        "val": 23.7,
+        "uni": "℃"
+      },
+      "humi": {
+        "val": 59.6,
+        "uni": "%"
+      }
+    },
+    "observation": "STM32 USART2 TX remains observable through ST-Link VCP COM3; bridge states not physically measured",
+    "phone": "iPhone; user reported successful device connection",
+    "phone_ui_verified_by_agent": false,
+    "lcd_visual_test": "not performed; source preserved"
+  },
+  "backup": "backups/before-blinker-20261010",
+  "files": {
+    "include/air_config.h": {
+      "bytes": 356,
+      "sha256": "a12ee8675817fd3719c3108e3e8ff6099130d0c32b137cd6b4dfe2eb48fb3c4f"
+    },
+    "include/air_bluetooth.h": {
+      "bytes": 3774,
+      "sha256": "18056b38c9be8c2dad4afc91bbda912f63eb338963bf0ffd2f7d8ec9407dab6f"
+    },
+    "src/air_bluetooth.cpp": {
+      "bytes": 7658,
+      "sha256": "57ed84c9f1a295d9961f4220152250ef6dd4117d9ec5b2dbe151057bd72df0be"
+    },
+    "platformio.ini": {
+      "bytes": 1928,
+      "sha256": "d7e9519e770c242f4ba494234ecc7c3b372398b258e76c5e3276aa426a3f0d9c"
+    },
+    "test/test_air_bluetooth/test_main.cpp": {
+      "bytes": 18975,
+      "sha256": "bc7a194b818b74203a83ea12f31bbf41c9a3e1e88c62ef19cddd34efcd990762"
+    },
+    "README.md": {
+      "bytes": 10487,
+      "sha256": "bb8569a5c390c547651cb0297ddb2ad8d39c9d7dbe94ab68808df22c8bf162fc"
+    },
+    "docs/Blinker-integration.md": {
+      "bytes": 3813,
+      "sha256": "e37002c10cb83da41e3c35061cbcbb022e6dde8d39dfa697de437fc90fcaac56"
+    },
+    "docs/HC06-integration.md": {
+      "bytes": 9860,
+      "sha256": "415d55d97c04344de3bb9171986dafaf56b7c4b93cd7bbc86fc6f7a379630cbf"
+    },
+    "firmware/air-hc06-blinker-20261010.bin": {
+      "bytes": 47552,
+      "sha256": "207608b54bb156bf0d75676aadfc1f5b1297d2cc1631e17d5114265d90a2c32d"
+    },
+    "firmware/air-hc06-blinker-20261010.elf": {
+      "bytes": 94088,
+      "sha256": "63342f54d9ba0cc679de2018402993650322c5d50f8e9a6f56adfe58be3aba88"
+    }
+  },
+  "sources": [
+    "https://github.com/blinker-iot/blinker-library/blob/master/src/Functions/BlinkerNumber.h",
+    "https://github.com/blinker-iot/blinker-library/blob/master/src/Adapters/BlinkerBLE.h",
+    "https://github.com/blinker-iot/blinker-library/blob/master/src/Blinker/BlinkerApi.h"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-10-10T18:19:28.278012+08:00",
+  "user_choice": "No soldering, move module RXD/TXD to PA11/PA12; user requested rewiring before upload",
+  "default_environment": "nucleo_f411re_uart6",
+  "bluetooth_uart": {
+    "instance": "USART6",
+    "mcu_tx": "PA11",
+    "mcu_tx_header": "CN10-14",
+    "mcu_rx": "PA12",
+    "mcu_rx_header": "CN10-12",
+    "baud": 9600,
+    "format": "8N1"
+  },
+  "stlink_vcp": {
+    "instance": "USART2",
+    "baud": 115200,
+    "purpose": "sensor diagnostics"
+  },
+  "widget_keys": [
+    "temp",
+    "humi"
+  ],
+  "builds": {
+    "nucleo_f411re_uart6": {
+      "result": "SUCCESS",
+      "static_ram_bytes": 8988,
+      "flash_bytes": 48144
+    },
+    "nucleo_f411re": {
+      "result": "SUCCESS"
+    },
+    "nucleo_f411re_debug": {
+      "result": "SUCCESS"
+    }
+  },
+  "native_tests_recompiled": false,
+  "native_tests_limitation": "No native GCC toolchain available; current protocol code unchanged",
+  "uploaded": true,
+  "awaiting": null,
+  "phone_temperature_humidity_verified": false,
+  "backup": "backups/before-uart6-20261010-181321",
+  "artifacts": [
+    {
+      "path": "firmware/air-blinker-uart6-20261010.bin",
+      "bytes": 48600,
+      "sha256": "46f820447f180d37c6e09040c288e3cfa7c6b1ff00bfdb3798784ae9f17a162d"
+    },
+    {
+      "path": "firmware/air-blinker-uart6-20261010.elf",
+      "bytes": 95028,
+      "sha256": "7b030e162bd83bbd216353d057e7a7457150ab145aee6a4bae18008db3f7a67e"
+    }
+  ],
+  "logs": [
+    "logs/blinker-uart6-build-20261010.log",
+    "logs/blinker-uart6-final-build-20261010.log"
+  ],
+  "source_sha256": {
+    "src/main.cpp": "2f7586d178111b230c176a1b8ff1bf36db81a14db25617f88a26af939c16a96b",
+    "include/air_config.h": "c92e35fa9b7956332f89bb750122e3d88a554eb90aa3e51af43f3bd0157b1cc7",
+    "platformio.ini": "10236b037496f951e4f91bcb4889350670d392f81e74ac028acf9b5cf004e9a3",
+    "src/air_bluetooth.cpp": "57ed84c9f1a295d9961f4220152250ef6dd4117d9ec5b2dbe151057bd72df0be"
+  },
+  "flash_verification": "Verified OK",
+  "reset_after_upload": true,
+  "user_confirmed_rewiring": true,
+  "phone_data_received_user_confirmed": true,
+  "user_feedback": "有数据了",
+  "phone_verification_scope": "User confirmed data appears in APP; exact values and both widgets individually not inspected by agent",
+  "serial_capture": "logs/blinker-uart6-serial-20261010.json",
+  "sensor_frame_count_in_capture": 4,
+  "upload_log": "logs/blinker-uart6-upload-20261010.log"
+}

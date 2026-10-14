@@ -1,0 +1,48 @@
+Processing nucleo_f411re (platform: ststm32@20.0.0; board: nucleo_f411re; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/ststm32/nucleo_f411re.html
+PLATFORM: ST STM32 (20.0.0) > ST Nucleo F411RE
+HARDWARE: STM32F411RET6 100MHz, 128KB RAM, 512KB Flash
+DEBUG: Current (stlink) On-board (stlink) External (blackmagic, cmsis-dap, jlink)
+PACKAGES: 
+ - framework-arduinoststm32 @ 4.30000.0 (3.0.0) 
+ - framework-cmsis @ 2.60300.0 (6.3.0) 
+ - framework-cmsis-dsp @ 1.16.2 
+ - tool-dfuutil @ 1.11.0 
+ - tool-dfuutil-arduino @ 1.11.0 
+ - tool-openocd @ 3.1200.7 (12.0) 
+ - tool-stm32duino @ 1.0.2 
+ - tool-stm32flash @ 0.7.0 
+ - toolchain-gccarmnoneeabi @ 1.120301.0 (12.3.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 23 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- Adafruit ILI9341 @ 1.6.4
+|-- SPI @ 1.1.0
+|-- Adafruit GFX Library @ 1.12.6
+Building in release mode
+Checking size .pio\build\nucleo_f411re\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]   5.6% (used 7388 bytes from 131072 bytes)
+Flash: [=         ]   8.5% (used 44668 bytes from 524288 bytes)
+Configuring upload protocol...
+AVAILABLE: blackmagic, cmsis-dap, jlink, mbed, stlink
+CURRENT: upload_protocol = stlink
+Uploading .pio\build\nucleo_f411re\firmware.elf
+xPack Open On-Chip Debugger 0.12.0+dev-02228-ge5888bda3-dirty (2025-10-04-22:44)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+[stm32f4x.cpu] halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08004e14 msp: 0x20020000
+** Programming Started **
+** Programming Finished **
+** Verify Started **
+** Verified OK **
+** Resetting Target **
+shutdown command invoked
+========================= [SUCCESS] Took 5.50 seconds =========================

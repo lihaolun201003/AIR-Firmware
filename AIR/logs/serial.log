@@ -1,0 +1,13 @@
+AIR LCD TEST boot
+CS=PB6 DC=PB5 RESET=PA8 SCK=PA5 MOSI=PA7
+LED=3V3; MISO not connected; write-only display
+LCD color test: RED
+LCD color test: GREEN
+LCD color test: BLUE
+LCD color test: WHITE
+LCD color test: BLACK
+LCD test page sent. Check the physical display.
+LCD heartbeat: 1 s
+LCD heartbeat: 2 s
+LCD heartbeat: 3 s
+LCD heartbeat: 4 s

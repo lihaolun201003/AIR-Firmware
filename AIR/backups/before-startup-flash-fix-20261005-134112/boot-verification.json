@@ -1,0 +1,52 @@
+{
+  "client_date": "2026-10-05",
+  "build": "SUCCESS",
+  "flash_verification": "Verified OK",
+  "animation_duration_ms": 3465,
+  "rendered_animation_frames": 31,
+  "sensor_frames_during_animation": 5,
+  "sensor_frames_after_animation_in_capture": 17,
+  "monitor_started_automatically": true,
+  "sensor_checksum_errors": 0,
+  "sensor_length_errors": 0,
+  "sensor_partial_timeouts": 0,
+  "flash_used_bytes": 44668,
+  "static_ram_used_bytes": 7388,
+  "bitmap_flash_bytes": 15496,
+  "strip_buffer_bytes": 5120,
+  "visual_check": "User confirmed the animation displays normally and sensor data updates normally afterward",
+  "files": {
+    "assets/boot-character-original.png": {
+      "bytes": 900120,
+      "sha256": "3b6cbc1ff9a9f773bd0b009014383e3f96241cd0153a68aa34d642ae27125764"
+    },
+    "include/boot_character_data.h": {
+      "bytes": 96207,
+      "sha256": "aa4155960c55c05fad96480d2e1e36ba6a4525d201111c8412c4999020efb76e"
+    },
+    "include/boot_animation.h": {
+      "bytes": 186,
+      "sha256": "bd2c579c85b3dee05b6db35a439b41fb3e516b18f5104995d525e49234c4ad8a"
+    },
+    "src/boot_animation.cpp": {
+      "bytes": 4906,
+      "sha256": "60c7a6bfecfb47b657a8b44767482d80468272f2d0b7e1a4f3a8634532a0d462"
+    },
+    "src/main.cpp": {
+      "bytes": 8694,
+      "sha256": "8b10ba86af3fe93a4ef0685f3fca65fed281355697db9fc8acd1f3dcf3189f32"
+    },
+    "include/pms5003st.h": {
+      "bytes": 2907,
+      "sha256": "78325dcd56eea2e4ddcf1b418298df044fef0c0ef8bf1d97dba16e9264f98832"
+    },
+    "scripts/generate_boot_asset.py": {
+      "bytes": 1659,
+      "sha256": "57bb3f73df546a6df2986dae4646a6fb1cbac59f3c5ddecae9c70e1e449eef1f"
+    },
+    ".pio/build/nucleo_f411re/firmware.bin": {
+      "bytes": 45124,
+      "sha256": "e806d2508aecc5ea659db99e6364b65901d2e909bc0270b3fd2cd7f801bb506c"
+    }
+  }
+}

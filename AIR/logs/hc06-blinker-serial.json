@@ -1,0 +1,188 @@
+{
+  "port": "COM3",
+  "baud": 9600,
+  "read_only": true,
+  "duration_seconds": 8,
+  "json_packets": [
+    {
+      "pm1": {
+        "val": 11
+      },
+      "pm25": {
+        "val": 16
+      },
+      "pm10": {
+        "val": 17
+      },
+      "hcho": {
+        "val": 0.0
+      },
+      "temp": {
+        "val": 23.7,
+        "uni": "℃"
+      },
+      "humi": {
+        "val": 59.5,
+        "uni": "%"
+      }
+    },
+    {
+      "pm1": {
+        "val": 11
+      },
+      "pm25": {
+        "val": 16
+      },
+      "pm10": {
+        "val": 17
+      },
+      "hcho": {
+        "val": 0.0
+      },
+      "temp": {
+        "val": 23.7,
+        "uni": "℃"
+      },
+      "humi": {
+        "val": 59.4,
+        "uni": "%"
+      }
+    },
+    {
+      "pm1": {
+        "val": 11
+      },
+      "pm25": {
+        "val": 16
+      },
+      "pm10": {
+        "val": 17
+      },
+      "hcho": {
+        "val": 0.0
+      },
+      "temp": {
+        "val": 23.7,
+        "uni": "℃"
+      },
+      "humi": {
+        "val": 59.4,
+        "uni": "%"
+      }
+    },
+    {
+      "pm1": {
+        "val": 11
+      },
+      "pm25": {
+        "val": 16
+      },
+      "pm10": {
+        "val": 17
+      },
+      "hcho": {
+        "val": 0.0
+      },
+      "temp": {
+        "val": 23.7,
+        "uni": "℃"
+      },
+      "humi": {
+        "val": 59.4,
+        "uni": "%"
+      }
+    },
+    {
+      "pm1": {
+        "val": 11
+      },
+      "pm25": {
+        "val": 16
+      },
+      "pm10": {
+        "val": 17
+      },
+      "hcho": {
+        "val": 0.0
+      },
+      "temp": {
+        "val": 23.7,
+        "uni": "℃"
+      },
+      "humi": {
+        "val": 59.4,
+        "uni": "%"
+      }
+    },
+    {
+      "pm1": {
+        "val": 11
+      },
+      "pm25": {
+        "val": 16
+      },
+      "pm10": {
+        "val": 17
+      },
+      "hcho": {
+        "val": 0.0
+      },
+      "temp": {
+        "val": 23.7,
+        "uni": "℃"
+      },
+      "humi": {
+        "val": 59.4,
+        "uni": "%"
+      }
+    },
+    {
+      "pm1": {
+        "val": 11
+      },
+      "pm25": {
+        "val": 16
+      },
+      "pm10": {
+        "val": 17
+      },
+      "hcho": {
+        "val": 0.0
+      },
+      "temp": {
+        "val": 23.7,
+        "uni": "℃"
+      },
+      "humi": {
+        "val": 59.6,
+        "uni": "%"
+      }
+    },
+    {
+      "pm1": {
+        "val": 11
+      },
+      "pm25": {
+        "val": 16
+      },
+      "pm10": {
+        "val": 17
+      },
+      "hcho": {
+        "val": 0.0
+      },
+      "temp": {
+        "val": 23.7,
+        "uni": "℃"
+      },
+      "humi": {
+        "val": 59.6,
+        "uni": "%"
+      }
+    }
+  ],
+  "parse_errors": [],
+  "bytes_received": 1128,
+  "valid_json_packet_count": 8,
+  "phone_ui_verified": false
+}

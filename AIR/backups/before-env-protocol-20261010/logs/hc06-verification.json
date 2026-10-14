@@ -1,0 +1,153 @@
+{
+  "client_date": "2026-10-10",
+  "board": "NUCLEO-F411RE",
+  "project_path": "C:\\Users\\TiAmo\\Desktop\\AIR\\AIR",
+  "bluetooth_module": "HC-06",
+  "bluetooth_receiver": "Android phone",
+  "bluetooth_uart": {
+    "instance": "USART2",
+    "rx": "PA3",
+    "tx": "PA2",
+    "baud": 9600,
+    "format": "8N1"
+  },
+  "required_bridges": {
+    "SB13": "OFF",
+    "SB14": "OFF",
+    "SB62": "ON",
+    "SB63": "ON"
+  },
+  "sensor_uart": {
+    "instance": "USART1",
+    "rx": "PA10",
+    "tx_unconnected": "PA9",
+    "baud": 9600
+  },
+  "resources": {
+    "nucleo_f411re": {
+      "build": "SUCCESS",
+      "static_ram_bytes": 8480,
+      "ram_capacity_bytes": 131072,
+      "flash_used_bytes": 47312,
+      "flash_capacity_bytes": 524288
+    },
+    "nucleo_f411re_debug": {
+      "build": "SUCCESS",
+      "static_ram_bytes": 7392,
+      "ram_capacity_bytes": 131072,
+      "flash_used_bytes": 45352,
+      "flash_capacity_bytes": 524288
+    }
+  },
+  "tests": {
+    "environment": "native",
+    "bluetooth_tests_passed": 12,
+    "pms_regression_tests_passed": 6,
+    "total_passed": 18,
+    "failures": 0,
+    "compiler_flags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    "log": "logs/hc06-native-tests.log"
+  },
+  "artifact_checks": {
+    "bluetooth_image_has_no_old_serial_logs": true,
+    "debug_image_retains_old_serial_logs": true,
+    "sensor_parser_and_boot_image_unchanged": true,
+    "stack_pointer": "0x20020000",
+    "reset_vector": "0x8005795"
+  },
+  "hardware": {
+    "bridge_state": "User confirmed hardware ready; not physically measured by agent",
+    "uploaded_this_iteration": true,
+    "hc06_android_wireless_test": "not performed",
+    "display_and_sensor_test_on_new_firmware": "not performed",
+    "user_confirmation": "2026-10-10: user confirmed hardware ready and requested flashing",
+    "flash_verification": "Verified OK",
+    "target_reset_after_upload": true,
+    "upload_log": "logs/hc06-upload.log",
+    "uploaded_environment": "nucleo_f411re",
+    "uploaded_firmware_sha256": "5d701b1024d58472428b9a819d49f2e7a557433bf0df93afacc397cfc2fa6809"
+  },
+  "backup": "backups/before-hc06-20261010",
+  "files": {
+    "platformio.ini": {
+      "bytes": 1608,
+      "sha256": "391b59aa396a2c433d660bb9c99fda058c4e8109406dc60aadeb0dd132b95818"
+    },
+    "README.md": {
+      "bytes": 9957,
+      "sha256": "c319ecb83bb891668a6c5f8d5ae4e14bc57cc96f68586359d70cd8f3805cd4d8"
+    },
+    "include/air_config.h": {
+      "bytes": 209,
+      "sha256": "a590d2d613cdd4e6d3c89d44825756e29dfdd0d8e9688fe39730911fb97902f5"
+    },
+    "include/air_bluetooth.h": {
+      "bytes": 3429,
+      "sha256": "c53fa795504b46b856cf9777614e641b7ca01f0f792b7506ca7deee95f8b0fb5"
+    },
+    "include/pms5003st.h": {
+      "bytes": 2907,
+      "sha256": "78325dcd56eea2e4ddcf1b418298df044fef0c0ef8bf1d97dba16e9264f98832"
+    },
+    "include/boot_character_data.h": {
+      "bytes": 96207,
+      "sha256": "aa4155960c55c05fad96480d2e1e36ba6a4525d201111c8412c4999020efb76e"
+    },
+    "include/boot_animation.h": {
+      "bytes": 333,
+      "sha256": "a9cebba5ab48b56b4188e9f28e0da8e2ca07b87af40b49817307e254384b8c5e"
+    },
+    "src/air_bluetooth.cpp": {
+      "bytes": 6426,
+      "sha256": "acd257b1a66eb37d45cb220c70f2fecadc1da3d23fd66d79eeef95cee69e9eeb"
+    },
+    "src/main.cpp": {
+      "bytes": 9898,
+      "sha256": "7f987537dd8dca0a17e0f6ef86a24d91bc55db7aab32ab1173f1cb15319f15b2"
+    },
+    "src/boot_animation.cpp": {
+      "bytes": 5489,
+      "sha256": "d35790bdbbdcc73ca9b2abfb3a5c6c1d2cc8df16fe740698361580ea71a2fe9a"
+    },
+    "src/boot_display.cpp": {
+      "bytes": 3399,
+      "sha256": "ff3b8612a0794c3e0995dd89d4637e9c37b5e49db59e7cf7c5f0046235ebb005"
+    },
+    "test/test_air_bluetooth/test_main.cpp": {
+      "bytes": 11782,
+      "sha256": "067fae9d51c4197fbbeac05a5bf19ec2e38d99c3640ff8f327a8b35a01fda595"
+    },
+    "test/test_pms_parser/test_main.cpp": {
+      "bytes": 4393,
+      "sha256": "e286e8f88dc52117a8a4cdad3a237df4543638b1478321aabc072da806730c9e"
+    },
+    "docs/HC06-integration.md": {
+      "bytes": 9458,
+      "sha256": "0ccf3dbd10a6fe85051c1f6e532d0b9ebb70a4c51e2aff38eb8223fd3aa8e1d9"
+    },
+    "firmware/air-hc06-20261010.bin": {
+      "bytes": 47768,
+      "sha256": "5d701b1024d58472428b9a819d49f2e7a557433bf0df93afacc397cfc2fa6809"
+    },
+    "firmware/air-hc06-20261010.elf": {
+      "bytes": 93964,
+      "sha256": "89ddf6f8e98b8eb9a0c18b56280957a7accfd7f3963a990c905e3f4b8333c328"
+    },
+    "firmware/air-debug-20261010.bin": {
+      "bytes": 45808,
+      "sha256": "805b5cedbad901537548d1af27cf4a6d70d88b748e1835c2f8c6224c3e45cb12"
+    },
+    "firmware/air-debug-20261010.elf": {
+      "bytes": 92788,
+      "sha256": "1b0224efc0a3016c0ba02f92dbace1b11437e6fd4b0a904b7517ed10561cead0"
+    },
+    "logs/hc06-upload.log": {
+      "bytes": 7592,
+      "sha256": "7772db987c4185886fda702f6e5018dd4d0eb42bb843e85be993a6b7058e7253"
+    }
+  }
+}

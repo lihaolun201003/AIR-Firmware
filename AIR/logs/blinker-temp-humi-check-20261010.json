@@ -1,0 +1,121 @@
+{
+  "checked_at": "2026-10-10T18:06:26.350052+08:00",
+  "confirmed_app_keys": {
+    "temperature": "temp",
+    "humidity": "humi"
+  },
+  "source_code_changed": false,
+  "firmware_uploaded_this_session": false,
+  "build": {
+    "environment": "nucleo_f411re",
+    "result": "SUCCESS",
+    "ram_bytes": 8512,
+    "flash_bytes": 47096
+  },
+  "native_tests_this_session": {
+    "result": "NOT_RUN",
+    "reason": "gcc/g++ not available in PATH; native compilation failed before tests could execute"
+  },
+  "uart": {
+    "port": "COM3",
+    "baud": 9600,
+    "read_only": true,
+    "duration_seconds": 4,
+    "valid_packets": 4,
+    "packets": [
+      {
+        "pm1": {
+          "val": 19
+        },
+        "pm25": {
+          "val": 28
+        },
+        "pm10": {
+          "val": 29
+        },
+        "hcho": {
+          "val": 0.0
+        },
+        "temp": {
+          "val": 20.6,
+          "uni": "℃"
+        },
+        "humi": {
+          "val": 74.4,
+          "uni": "%"
+        }
+      },
+      {
+        "pm1": {
+          "val": 19
+        },
+        "pm25": {
+          "val": 27
+        },
+        "pm10": {
+          "val": 28
+        },
+        "hcho": {
+          "val": 0.0
+        },
+        "temp": {
+          "val": 20.5,
+          "uni": "℃"
+        },
+        "humi": {
+          "val": 74.5,
+          "uni": "%"
+        }
+      },
+      {
+        "pm1": {
+          "val": 20
+        },
+        "pm25": {
+          "val": 28
+        },
+        "pm10": {
+          "val": 28
+        },
+        "hcho": {
+          "val": 0.0
+        },
+        "temp": {
+          "val": 20.5,
+          "uni": "℃"
+        },
+        "humi": {
+          "val": 74.5,
+          "uni": "%"
+        }
+      },
+      {
+        "pm1": {
+          "val": 19
+        },
+        "pm25": {
+          "val": 28
+        },
+        "pm10": {
+          "val": 29
+        },
+        "hcho": {
+          "val": 0.0
+        },
+        "temp": {
+          "val": 20.6,
+          "uni": "℃"
+        },
+        "humi": {
+          "val": 74.6,
+          "uni": "%"
+        }
+      }
+    ],
+    "parse_errors": []
+  },
+  "phone_app_display_verified": false,
+  "bluetooth_module_compatibility_verified": false,
+  "documentation": "docs/Blinker-integration.md",
+  "temperature_humidity_numeric_in_all_packets": true
+}

@@ -1,0 +1,79 @@
+{
+  "verified_at_local": "2026-10-03T11:29:27+08:00",
+  "board": "NUCLEO-F411RE",
+  "sensor": "PMS5003ST",
+  "sensor_wiring": {
+    "VCC": "5V",
+    "GND": "GND",
+    "TXD": "D2 / PA10"
+  },
+  "sensor_uart": "USART1 9600 8N1 active receive",
+  "build": "SUCCESS",
+  "flash_verification": "Verified OK",
+  "flash_bytes": 27712,
+  "static_ram_bytes": 2268,
+  "parser_tests": {
+    "execution": "On the NUCLEO-F411RE",
+    "passed": 6,
+    "failed": 0
+  },
+  "capture_duration_seconds": 40,
+  "consecutive_real_sensor_frames": 42,
+  "checksum_errors": 0,
+  "length_errors": 0,
+  "partial_frame_timeouts": 0,
+  "raw_frames_independently_decoded": [
+    {
+      "pm1_ug_m3": 40,
+      "pm25_ug_m3": 67,
+      "pm10_ug_m3": 75,
+      "hcho_mg_m3": 0.0,
+      "temperature_c": 22.8,
+      "humidity_percent": 68.5,
+      "firmware_version": 145,
+      "error": 0
+    },
+    {
+      "pm1_ug_m3": 39,
+      "pm25_ug_m3": 66,
+      "pm10_ug_m3": 75,
+      "hcho_mg_m3": 0.0,
+      "temperature_c": 22.8,
+      "humidity_percent": 68.5,
+      "firmware_version": 145,
+      "error": 0
+    }
+  ],
+  "last_sensor_sample": "PMS frame=42 PM1=39 PM2.5=63 PM10=74 ug/m3 TEMP=22.9 C RH=68.6 % HCHO=0.000 mg/m3 FW=145 ERR=0",
+  "display_visual_check": "User confirmed all readings display normally and update continuously",
+  "files": {
+    "src/main.cpp": {
+      "bytes": 8369,
+      "sha256": "ff8959c23d6902ea7a25dd62180fb93302ff9f9b27caa109a373329ed5954f6e"
+    },
+    "include/pms5003st.h": {
+      "bytes": 2907,
+      "sha256": "78325dcd56eea2e4ddcf1b418298df044fef0c0ef8bf1d97dba16e9264f98832"
+    },
+    "include/wiring_private.h": {
+      "bytes": 273,
+      "sha256": "62b4639b6650b37278a1c952b710e24ced274ad215c3b3c4e0e3c6a28d879669"
+    },
+    "platformio.ini": {
+      "bytes": 815,
+      "sha256": "6f244b9575038a8f259b6b05165ffb420678e5b1df9236671036e70578bed829"
+    },
+    "scripts/windows_paths.py": {
+      "bytes": 447,
+      "sha256": "57c33e4af15923b7e7f85acefd78a3386b33f99c84308d4ae408df5eac92ae57"
+    },
+    "test/test_pms_parser/test_main.cpp": {
+      "bytes": 4262,
+      "sha256": "ef7d315b152873aa0fdce81a0c6a5d191d8736f4bf8e079223ad30be08c0ed95"
+    },
+    ".pio/build/nucleo_f411re/firmware.bin": {
+      "bytes": 28168,
+      "sha256": "f6ab55361ffb2d012c20f310b97e0b551d2399ecca54304acb14bf8006641839"
+    }
+  }
+}

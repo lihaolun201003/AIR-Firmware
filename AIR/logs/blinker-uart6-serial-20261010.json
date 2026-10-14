@@ -1,0 +1,15 @@
+{
+  "port": "COM3",
+  "baud": 115200,
+  "read_only": true,
+  "duration_seconds": 4,
+  "lines": [
+    "PMS status: rx=3160 valid=79 checksum_bad=0 length_bad=0 partial_timeout=0 age_ms=881",
+    "PMS frame=80 PM1=18 PM2.5=27 PM10=28 ug/m3 TEMP=21.4 C RH=70.5 % HCHO=0.000 mg/m3 FW=145 ERR=0",
+    "PMS frame=81 PM1=18 PM2.5=29 PM10=31 ug/m3 TEMP=21.4 C RH=70.5 % HCHO=0.000 mg/m3 FW=145 ERR=0",
+    "PMS frame=82 PM1=18 PM2.5=29 PM10=32 ug/m3 TEMP=21.5 C RH=70.6 % HCHO=0.000 mg/m3 FW=145 ERR=0",
+    "PMS frame=83 PM1=17 PM2.5=28 PM10=30 ug/m3 TEMP=21.4 C RH=70.5 % HCHO=0.000 mg/m3 FW=145 ERR=0"
+  ],
+  "sensor_frame_count": 4,
+  "error": null
+}
